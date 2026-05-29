@@ -76,7 +76,7 @@ No.
 
 > 18. What happens when a document that uses your feature is kept alive in BFCache (instead of getting destroyed) after navigation, and potentially gets reused on future navigations back to the document?
 
-A BFCached document's registered tools remain in memory. While the document is non-fully-active, agents should not invoke its tools or deliver events to it. On restoration, registered tools become available again.
+A BFCached document's registered tools remain in memory. While the document is non-fully-active, agents cannot invoke its tools or deliver events to it. On restoration, registered tools become available again.
 
 > 19. What happens when a document that uses your feature gets disconnected?
 
